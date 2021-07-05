@@ -23,6 +23,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 # Adding Plugins in .zshrc file
 sed -i "s/plugins=(git)/plugins=(git command-not-found ansible branch docker docker-compose gpg-agent python rsync screen themes zsh_reload zsh-autosuggestions zsh-syntax-highlighting)/" ~/.zshrc
 
+# Setting theme to sonicradish
+sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="sonicradish"/' .zshrc
+
 # Adding custom functions and alias
 curl -s https://raw.githubusercontent.com/crazyuploader/Misc/master/functions >> ~/.zshrc
 echo "Script Finished..."
